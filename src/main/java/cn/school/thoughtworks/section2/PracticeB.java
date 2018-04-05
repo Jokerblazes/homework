@@ -13,7 +13,7 @@ public class PracticeB {
             if (s.length() != 1) {
                 char c = s.charAt(0);
                 char number = s.charAt(2);
-                result.merge(String.valueOf(c), Integer.valueOf(number - zero), (a, b) -> a + b);
+                result.merge(String.valueOf(c), number - zero, (a, b) -> a + b);
             } else {
                 result.merge(s,1,(a,b) -> a + b);
             }
